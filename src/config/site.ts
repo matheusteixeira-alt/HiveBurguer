@@ -7,7 +7,6 @@ import espacoFachada from "@/assets/espaco-fachada.jpg";
 import logo from "@/assets/hive-logo.png";
 import instagramIcon from "@/assets/icon-instagram.png";
 import ifoodIcon from "@/assets/icon-ifood.png";
-import heroHive from "@/assets/hero-hive.jpg";
 import hiveTexas from "@/assets/burger-hive-texas.jpg";
 import honeyHive from "@/assets/burger-honey-hive.jpg";
 import hiveCheddar from "@/assets/burger-hive-cheddar.jpg";
@@ -86,6 +85,6 @@ export const space: { src: string; title: string; caption: string }[] = [
   { src: espacoExterna, title: "Área externa", caption: "Guarda-sóis com vista para as quadras." },
 ];
 
-export const images = { heroBurger: heroHive, ambiente: espacoDeck, fachada: espacoFachada, logo, instagramIcon, ifoodIcon };
+export const images = { heroBurger: hiveTexas, ambiente: espacoDeck, fachada: espacoFachada, logo, instagramIcon, ifoodIcon };
 
 

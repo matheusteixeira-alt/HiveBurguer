@@ -109,7 +109,9 @@ const embers = Array.from({ length: 22 }, (_, i) => ({
 export function Hero() {
   return (
     <section id="inicio" className="relative flex min-h-[100svh] items-end overflow-hidden grain">
-      <img src={images.heroBurger} alt="Hambúrguer artesanal com queijo derretido" className="hero-img absolute inset-0 h-full w-full object-cover" width={2000} height={1333} fetchPriority="high" />
+      {/* Foto vertical: no computador fica inteira à direita, com uma cópia desfocada preenchendo o fundo. */}
+      <img src={images.heroBurger} alt="" aria-hidden className="absolute inset-0 hidden h-full w-full scale-110 object-cover opacity-40 blur-2xl md:block" />
+      <img src={images.heroBurger} alt="Hive Texas: hambúrguer com carne desfiada, barbecue e onion straw" className="hero-img absolute inset-0 h-full w-full object-cover object-[50%_40%] md:left-auto md:w-[52%] md:[mask-image:linear-gradient(to_right,transparent,black_35%)]" width={1067} height={1600} fetchPriority="high" />
       <div className="hero-glow absolute inset-0" />
       <div className="absolute inset-0 bg-hero-fade" />
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
